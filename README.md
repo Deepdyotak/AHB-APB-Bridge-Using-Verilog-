@@ -1,5 +1,37 @@
-# AHB-APB-Bridge-Using-Verilog-
-This Project will cover the bridge design between AHB and APB Buses.
+AHB to APB Bridge Using Verilog
+Project Overview
+
+This project implements a hardware bridge connecting the AHB bus to the APB bus using Verilog. It enables AHB masters to communicate with APB slaves, supporting single and burst read/write operations. Full testbenches and simulation results are included to validate functionality.
+
+Features
+
+AHB → APB bridge supporting single & burst transfers
+
+Fully modular Verilog design
+
+Testbenches for all main modules (AHB master, AHB slave, bridge, APB controller)
+
+Simulation waveforms and synthesis results included
+
+Architecture
+
+Block Diagram:
+![photo_2025-09-18_20-06-50](https://github.com/user-attachments/assets/052b80a5-1132-4d99-a21d-89f34de3c077)
+
+Key Modules:
+
+ahb_master.v → Generates AHB read/write requests
+
+ahb_slave.v → Receives requests and sends responses
+
+bridge_top.v → Converts AHB transactions to APB protocol
+
+apb_controller.v → Manages APB read/write operations
+
+apb_slave.v → Implements the peripheral behavior
+
+
+
 
 Simulation Results :-
 
